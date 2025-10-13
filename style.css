@@ -16,8 +16,8 @@ html {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5vh 80vh 15vh;
+    grid-template-columns: 100vw; /* abbiamo messo le frazione e andava in overflow perche le grandezze con le fratet non li piacciono quindi mettio 100vw */
+    grid-template-rows: auto 800px auto; 
     grid-template-areas:
         "header header header"
         "main main main"
