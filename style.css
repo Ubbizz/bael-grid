@@ -1,5 +1,5 @@
 * {
-    border: solid red 1px;
+    border: solid rgba(116, 106, 106, 0.534) 1px;
     box-sizing: border-box;
 }
 
@@ -9,10 +9,15 @@ html {
     padding: 0px;
 }
 
+/* body {
+    display: grid;
+    grid-template-columns: auto;
+} */
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 7vh 80vh 13vh;
+    grid-template-rows: 5vh 80vh 15vh;
     grid-template-areas:
         "header header header"
         "main main main"
