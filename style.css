@@ -211,3 +211,16 @@ html {
     max-width: 26px;
 }
 
+.flexbox{
+    display: flex;
+}
+
+.text-center{
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
