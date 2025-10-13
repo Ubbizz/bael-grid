@@ -1,0 +1,185 @@
+* {
+    border: solid red 1px;
+}
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 7vh 80vh 13vh;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "n1-1 n1-2 n1-3";
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "n2-1 n2-2 n2-3"
+        "n2-4 n2-5 n2-6"
+        "n2-7 n2-8 n2-9"
+        "n2-10 n2-11 n2-12";
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "n3-1 n3-1 n3-1 n3-1"
+        "n3-2 n3-3 n3-4 n3-5"
+        "n3-6 n3-6 n3-6 n3-6";
+}
+
+.n3-1 {
+    grid-area: n3-1;
+}
+
+.n3-2 {
+    grid-area: n3-2;
+}
+
+.n3-3 {
+    grid-area: n3-3;
+}
+
+.n3-4 {
+    grid-area: n3-4;
+}
+
+.n3-5 {
+    grid-area: n3-5;
+}
+
+.n3-6 {
+    grid-area: n3-6;
+}
+
+
+
+.n2-1 {
+    grid-area: n2-1;
+}
+
+.n2-2 {
+    grid-area: n2-2;
+}
+
+.n2-3 {
+    grid-area: n2-3;
+}
+
+.n2-4 {
+    grid-area: n2-4;
+}
+
+.n2-5 {
+    grid-area: n2-5;
+}
+
+.n2-6 {
+    grid-area: n2-6;
+}
+
+.n2-7 {
+    grid-area: n2-7;
+}
+
+.n2-8 {
+    grid-area: n2-8;
+}
+
+.n2-9 {
+    grid-area: n2-9;
+}
+
+.n2-10 {
+    grid-area: n2-10;
+}
+
+.n2-11 {
+    grid-area: n2-11;
+}
+
+.n2-12 {
+    grid-area: n2-12;
+}
+
+
+
+.n1-1 {
+    grid-area: n1-1;
+}
+
+.n1-2 {
+    grid-area: n1-2;
+}
+
+.n1-3 {
+    grid-area: n1-3;
+}
+
+
+@media (max-width: 638px) {
+    .header {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "n1-1 . n1-3"
+            ". . n1-2";
+    }
+}
+
+
+@media (max-width: 638px) {
+
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "n2-1 n2-2"
+            "n2-3 n2-4"
+            "n2-5 n2-6"
+            "n2-7 n2-8"
+            "n2-9 n2-10"
+            "n2-11 n2-12";
+    }
+}
+
+
+@media (max-width: 638px) {
+    .footer {
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "n3-1"
+            "n3-2"
+            "n3-3"
+            "n3-4"
+            "n3-5"
+            "n3-6";
+    }
+}
